@@ -98,11 +98,9 @@ class Snowflake {
     this.angle += this.dir * this.vel.mag() / 200;
 
     //Show snow building up on the ground
-    if (this.snowPile < 20)
+    if (this.snowPile < 120)
       {
-        
-      }
-      fill(this.snowPile*this.snowPile*10, 223, 230);
+        fill(this.snowPile*this.snowPile*10, 223, 230);
       noStroke();
     //Middle Rectangle
       rect(0,height,width,-this.snowPile);
@@ -112,6 +110,12 @@ class Snowflake {
     ellipse(width-this.snowPile,height-this.snowPile*1.1,width/2,this.snowPile)
     //Middle Oval
     ellipse(width/2,height-this.snowPile,width/2,this.snowPile)
+      }
+    else
+      {
+
+      }
+      
   }
   
 
